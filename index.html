@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODARIAN PROJECT</title>
+    <style>
+        body {
+         display: flex;
+         height: 100vh;
+         justify-content: center;
+         align-items: center;
+         margin: 0;
+         padding: 0;
+        }
+        .container {
+            height: 700px;
+            width: 700px;
+            display: grid;
+            background-color: #000;
+            grid-template-columns: 200px 300px 200px;
+            grid-template-rows: 200px 300px 100px 100px;
+            gap: 9px;
+        }
+
+        .item{
+            background-color: #F0F1EC;
+        }
+        .red {
+            background-color: #E72F24;
+            grid-area: 1 / 2 / 3 / 4;
+        }
+        .blue {
+            background-color: #004592;
+            grid-area: 3 / 1 / 5 / 1;
+        }
+
+        .white3 {
+            grid-row: span2;
+            grid-area: 3 / 2 / 5 / 3;
+        }
+         .yellow {
+            background-color: #F9D01E;
+            grid-area: 4 / 3 / 5 / 4;
+        }
+        .white1 {
+            border-bottom: 10px solid #000;
+        }
+
+      
+
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item white1"></div>
+        <div class="item red"></div>
+        <div class="item white2"></div>
+        <div class="item blue"></div>
+
+        
+        <div class="item white3"></div>
+        <div class="item white4"></div>
+        <div class="item yellow"></div>
+    </div>
+</body>
+</html>
